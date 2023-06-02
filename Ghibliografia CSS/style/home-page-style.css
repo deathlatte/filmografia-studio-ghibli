@@ -1,0 +1,116 @@
+.home-window{
+    background-color: #1E3D59;
+    display: grid;
+    grid-template-columns: max-content;
+    left: 0;
+    right: 0;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 0 0 #3a76ab;
+}
+
+.home-titolo {
+    color: #F5F0E1;
+}
+
+.tendina {
+    background-color: #1E3D59;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+}
+
+.inside-tendina {
+    display: flex;
+    background-color: aqua;
+    color: white;
+    justify-content: center;
+}
+
+.frames {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 15px;
+    column-gap: 15px;
+    margin: 10px 10px;
+}
+
+.frame {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.titolo-frame {
+    position: absolute;
+    top: 0;
+    margin-top: 7px;
+    margin-left: 5px;
+    padding: 1px 2px 1px 2px;
+    border-radius: 3px;
+    background-color: rgb(50, 50, 50);
+    color: gainsboro;
+    text-align: center;
+    font-size: 10px;
+}
+
+.voti-frame {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 7px;
+    margin-left: 5px;
+    padding: 1px 2px 1px 2px;
+    border-radius: 3px;
+    background-color: rgb(50, 50, 50);
+    color: gainsboro;
+    text-align: center;
+    font-size: 8px;
+}
+
+.anno-frame {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 7px;
+    margin-right: 5px;
+    padding: 1px 2px 1px 2px;
+    border-radius: 3px;
+    background-color: rgb(50, 50, 50);
+    color: gainsboro;
+    text-align: center;
+    font-size: 8px;    
+}
+
+@media (max-width: 300px){
+.frames {
+    grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 300.02p) and (max-width: 550px){
+    .frames {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 550.02px) and (max-width: 800px){
+    .frames {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 800.02px){
+.frames {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
